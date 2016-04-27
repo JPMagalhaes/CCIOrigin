@@ -1,5 +1,11 @@
 package com.jpm.linkedlist;
 
+/**
+ * Linked List definition and utilities methods
+ * 
+ * @author JPMagalhaes
+ *
+ */
 public class LinkedList {
 	
 	public static class Node<T> {
