@@ -1,7 +1,5 @@
 package com.jpm.linkedlist;
 
-import com.jpm.linkedlist.LinkedList.Node;
-
 /**
  * Cracking the coding Interview, 4 edition
  * 
@@ -38,8 +36,8 @@ public class FindNthToLastElement {
 	
 	public static void testIntList(){
 		Node<Integer> intList = new Node<Integer>();
-		Node<Integer> temp = intList;
-		Node<Integer> last = temp;
+		Node<Integer> temp = intList, last = temp;
+		
 		for (int i = 0; i < 4; i++) {
 			temp.value = i;
 			temp.next = new Node<Integer>();

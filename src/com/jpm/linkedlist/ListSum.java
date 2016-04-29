@@ -1,7 +1,5 @@
 package com.jpm.linkedlist;
 
-import com.jpm.linkedlist.LinkedList.Node;
-
 /**
  * Cracking the coding Interview, 4 edition
  * 
