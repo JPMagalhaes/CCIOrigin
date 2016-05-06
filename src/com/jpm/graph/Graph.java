@@ -4,6 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
+/**
+ * Cracking the coding Interview, 4 edition 
+ * 
+ * 4.2 Given a directed graph, design an algorithm to find out whether there is
+ * a route between two nodes. pg 54
+ * 
+ * @author JPMagalhaes
+ * 
+ * @param <T>
+ */
 public class Graph<T> {
 	Map<T, Vertex<T>> vertices;
 	
