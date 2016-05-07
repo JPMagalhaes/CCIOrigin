@@ -39,15 +39,15 @@ public class Graph<T> {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		for (Vertex v : vertices.values()) {
+		for (Vertex<T> v : vertices.values()) {
 			builder.append(v).append("\n");
 		}
 		return builder.toString();
 	}
 	
 	public boolean search(T from, T to) {
-		Vertex f = vertices.get(from);
-		Vertex t = vertices.get(to);
+		Vertex<T> f = vertices.get(from);
+		Vertex<T> t = vertices.get(to);
 		
 		if(f == null || t == null)
 			return false;
@@ -57,20 +57,20 @@ public class Graph<T> {
 		Stack<Vertex<T>> stack = new Stack<>();
 		stack.add(f);
 		while (!stack.isEmpty()) {
-			Vertex v = stack.pop();
+			Vertex<T> v = stack.pop();
 			v.visited = true;
-			for(Object n : v.edges.values()){
-				if(((Vertex)n).data == to)
+			for(Vertex<T> n : v.edges.values()){
+				if(n.data == to)
 					return true;
-				else if(!((Vertex)n).visited)
-					stack.add((Vertex)n);
+				else if(!n.visited)
+					stack.add(n);
 			}
 		}
 		return false;
 	}
 	
 	private void resetGraph(){
-		for (Vertex v : vertices.values()) {
+		for (Vertex<T> v : vertices.values()) {
 			v.visited = false;
 		}
 	}
