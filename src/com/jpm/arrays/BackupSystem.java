@@ -1,4 +1,4 @@
-package com.jpm.strings;
+package com.jpm.arrays;
 
 /*
 Amazon wants to implement a new backup system, in which files are stored into data tapes.

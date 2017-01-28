@@ -19,7 +19,7 @@ In this example, the word "dog" is the first word in the stream which is not rep
 
 */
 
-package com.jpm.strings;
+package com.jpm.linkedlist;
 
 import java.util.LinkedHashSet;
 
